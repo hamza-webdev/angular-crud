@@ -7,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PostCreateComponent implements OnInit {
 
+  newPost = 'No comment !! ';
+  entredValue = '';
+  onAddPost() {
+    this.newPost = this.entredValue;
+    // this.postInput = postInput.valid;
+  }
+
   constructor() { }
 
   ngOnInit(): void {
