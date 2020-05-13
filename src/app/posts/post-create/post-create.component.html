@@ -1,9 +1,16 @@
 <mat-card>
+  <form class="">
+  <mat-form-field class="example-full-width">
+    <mat-label>Title Post: </mat-label>
+    <input matInput [(ngModel)]="entredTitle" name="entredTitle">
+  </mat-form-field>
+<br>
 <mat-form-field class="example-full-width">
   <mat-label>Leave a comment</mat-label>
-  <textarea matInput rows="5" [(ngModel)]="entredValue" ></textarea>
+  <textarea matInput rows="5" [(ngModel)]="entredContent" name="entredContent" ></textarea>
 </mat-form-field>
 <hr>
 <button (click)="onAddPost()" mat-flat-button color="primary" >Save Post</button>
+  </form>
 </mat-card>
 
